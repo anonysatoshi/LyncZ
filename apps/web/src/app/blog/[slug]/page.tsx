@@ -8,8 +8,8 @@ export const revalidate = 60; // Revalidate every 60 seconds
 
 const VALID_BLOG_LOCALES: BlogLocale[] = ['en', 'zh-CN', 'zh-TW'];
 
-function getLocaleFromCookie(): BlogLocale {
-  const cookieStore = cookies();
+async function getLocaleFromCookie(): Promise<BlogLocale> {
+  const cookieStore = await cookies();
   const nextLocale = cookieStore.get('NEXT_LOCALE')?.value;
   if (nextLocale && VALID_BLOG_LOCALES.includes(nextLocale as BlogLocale)) {
     return nextLocale as BlogLocale;
@@ -30,7 +30,7 @@ export async function generateStaticParams() {
 
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
-  const locale = getLocaleFromCookie();
+  const locale = await getLocaleFromCookie();
   const post = await getBlogPostBySlug(slug, locale);
 
   if (!post) {
