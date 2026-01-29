@@ -1,0 +1,66 @@
+use axum::{
+    routing::{get, post, delete},
+    Router,
+};
+use tower_http::cors::{CorsLayer, Any};
+
+use crate::api::{handlers, state::AppState};
+
+/// Create the API router
+/// 
+/// Endpoints:
+/// - GET  /health                      - Health check
+/// - GET  /api/orders/active           - List active sell orders
+/// - GET  /api/orders/:id              - Get order by ID
+/// - GET  /api/orders/:id/activities   - Get order with activity timeline
+/// - GET  /api/trades/:id              - Get trade by ID
+/// - GET  /api/trades/buyer/:addr      - Get trades by buyer
+/// - POST /api/trades/:id/validate     - Upload PDF + quick validation (~10s)
+/// - POST /api/trades/:id/settle       - Generate proof + submit (~2-3 min)
+pub fn create_router(state: AppState) -> Router {
+    let cors = CorsLayer::new()
+        .allow_origin(Any)
+        .allow_methods(Any)
+        .allow_headers(Any);
+
+    Router::new()
+        // Health
+        .route("/health", get(handlers::health_check))
+        
+        // Orders (read-only + visibility + payment-info)
+        .route("/api/orders/active", get(handlers::get_active_orders))
+        .route("/api/orders/private/:code", get(handlers::get_order_by_private_code))
+        .route("/api/orders/:order_id", get(handlers::get_order))
+        .route("/api/orders/:order_id/activities", get(handlers::get_order_activities))
+        .route("/api/orders/:order_id/visibility", post(handlers::set_order_visibility))
+        .route("/api/orders/:order_id/payment-info", post(handlers::submit_payment_info))
+        
+        // Trades
+        .route("/api/trades/create", post(handlers::create_trade_handler))
+        .route("/api/trades/:trade_id", get(handlers::get_trade_handler))
+        .route("/api/trades/buyer/:buyer_address", get(handlers::get_trades_by_buyer_handler))
+        .route("/api/trades/seller/:seller_address", get(handlers::get_trades_by_seller_handler))
+        
+        // Settlement (2-step flow)
+        .route("/api/trades/:trade_id/validate", post(handlers::validate_handler))
+        .route("/api/trades/:trade_id/settle", post(handlers::settle_handler))
+        
+        // Debug endpoints (for development)
+        .route("/api/debug/database", get(handlers::debug_database))
+        
+        // Admin endpoints (read-only - all write operations removed for security)
+        // Contract modifications must be done directly via cast/forge with owner wallet
+        .route("/api/admin/config", get(handlers::get_contract_config))
+        
+        // Trade file endpoints
+        .route("/api/trades/:trade_id/pdf", get(handlers::get_trade_pdf))
+        
+        // Account settings (email notifications) - account-based, not role-based
+        .route("/api/account/email", post(handlers::account::set_account_email))
+        .route("/api/account/email", get(handlers::account::get_account_email))
+        .route("/api/account/email", delete(handlers::account::delete_account_email))
+        .route("/api/account/email/toggle", post(handlers::account::toggle_account_email))
+        
+        .layer(cors)
+        .with_state(state)
+}

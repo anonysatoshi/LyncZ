@@ -1,0 +1,66 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+.next/
+out/
+build/
+
+# Rust
+**/target/
+
+# Foundry
+**/cache/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Turbo
+.turbo/
+
+# Testing
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Local/sensitive data
+**/Local/
+
+# Axiom artifacts
+**/.axiom/
+**/axiom-artifacts/
+
+# Generated files
+**/cli_input.json
+**/proof-with-*.json
+
+# Private documents
+*.tex
+business_plan.pdf
+
+
+# Internal documents
+business_plan.pdf
+business_plan.tex
+*.aux
+*.log
+*.synctex.gz
+.vercel
+.env*.local

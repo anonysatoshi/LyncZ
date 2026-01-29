@@ -1,0 +1,34 @@
+# Railway ignore file
+# Only deploy the relay service, ignore everything else
+
+# Ignore frontend (deploy separately on Vercel)
+apps/
+pnpm-lock.yaml
+package.json
+pnpm-workspace.yaml
+
+# Ignore contracts (not needed at runtime)
+packages/contracts/cache/
+packages/contracts/out/
+packages/contracts/broadcast/
+
+# Ignore local development files
+Local/
+**/Local/
+**/.env
+**/.env.*
+
+# Ignore build artifacts
+**/target/
+**/node_modules/
+**/.next/
+
+# Ignore verifier circuits (only needed for proof generation)
+verifiers/alipay/circuits/
+verifiers/alipay/zk-circuits/
+
+# Keep only what's needed:
+# - services/relay/ (the backend)
+# - verifiers/alipay/pdf-utils/extractor/ (dependency)
+# - railway.toml (this config)
+

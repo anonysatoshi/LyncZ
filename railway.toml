@@ -1,0 +1,12 @@
+# Railway configuration for lyncz-web service
+# This explicitly tells Railway to NOT use pnpm/npm for starting
+
+[build]
+# Use Docker builder
+builder = "dockerfile"
+dockerfilePath = "services/relay/Dockerfile"
+
+[deploy]
+# Start command is configured per-service in Railway dashboard/API
+# restartPolicyType = "on_failure"
+

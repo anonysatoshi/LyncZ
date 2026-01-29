@@ -1,0 +1,33 @@
+name: Build
+
+on:
+  push:
+    paths:
+      - "pdf-utils/**"
+      - "circuits/**"
+  pull_request:
+    paths:
+      - "pdf-utils/**"
+      - "circuits/**"
+
+jobs:
+  build-pdf-utils:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: pdf-utils
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Build
+        run: cargo build --workspace --release
+
+      - name: Check formatting
+        run: cargo fmt --check
+
+      - name: Clippy
+        run: cargo clippy --workspace -- -D warnings

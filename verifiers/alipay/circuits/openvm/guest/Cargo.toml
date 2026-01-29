@@ -1,0 +1,9 @@
+[package]
+name = "openvm-pdf-verifier"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+openvm = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.4.1", features = ["std"] }
+openvm-sha2 = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.4.1" }
+pdf-core = { path = "../../../pdf-utils/core", package = "core", features = ["openvm_accel"] }

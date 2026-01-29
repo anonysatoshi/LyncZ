@@ -1,0 +1,976 @@
+{
+  "nav": {
+    "home": "Home",
+    "buyTokens": "Buy Crypto",
+    "sellTokens": "Sell Crypto",
+    "myAccount": "My Account",
+    "docs": "Docs",
+    "investors": "Investors",
+    "debug": "Debug",
+    "connect": "Connect"
+  },
+  "account": {
+    "title": "My Account",
+    "connectTitle": "Connect Your Wallet",
+    "connectSubtitle": "Connect your wallet to view your purchases, sales, and settings",
+    "connected": "Connected",
+    "stats": {
+      "activeOrders": "Active Orders",
+      "totalTrades": "Total Trades",
+      "pendingActions": "Pending",
+      "myPurchases": "Purchases",
+      "mySales": "Sales",
+      "action": "action",
+      "new": "new"
+    },
+    "sections": {
+      "orders": "Orders",
+      "trades": "Trades",
+      "myPurchases": "My Purchases",
+      "newCompleted": "new",
+      "mySales": "My Sales",
+      "notifications": "Notifications",
+      "active": "active",
+      "total": "total",
+      "pending": "pending",
+      "completed": "completed",
+      "emailAlerts": "Email alerts",
+      "actionRequired": "Action Required",
+      "activeOrders": "orders",
+      "incomingTrades": "trades"
+    },
+    "orderDetail": {
+      "backToAccount": "Back to Account",
+      "order": "Order",
+      "created": "Created",
+      "completed": "Completed",
+      "active": "Active",
+      "totalLocked": "Total Locked",
+      "remaining": "Remaining",
+      "exchangeRate": "Exchange Rate",
+      "paymentRail": "Payment Rail",
+      "activityTimeline": "Activity Timeline",
+      "noActivity": "No activity yet for this order.",
+      "tradeSettled": "Trade Settled",
+      "tokensSold": "Tokens sold",
+      "platformFee": "Platform fee",
+      "cnyReceived": "CNY received",
+      "buyer": "Buyer",
+      "viewTransaction": "View Transaction",
+      "pendingTrade": "Pending Trade",
+      "tokensLocked": "Tokens locked",
+      "expectedPayment": "Expected payment",
+      "expiresAt": "Expires at",
+      "expiredTrade": "Trade Expired",
+      "tokensReturned": "Tokens returned",
+      "unpaidAmount": "Unpaid amount",
+      "withdrawal": "Withdrawal",
+      "amountWithdrawn": "Amount withdrawn",
+      "manageOrder": "Manage Order",
+      "withdrawTokens": "Withdraw Tokens",
+      "available": "Available",
+      "max": "Max",
+      "withdraw": "Withdraw",
+      "confirming": "Confirming...",
+      "signing": "Signing...",
+      "edit": "Edit",
+      "cancel": "Cancel",
+      "updateRate": "Update Rate",
+      "updatePaymentInfo": "Update Payment Info",
+      "paymentAccount": "{rail} Account",
+      "paymentId": "{rail} ID",
+      "paymentName": "{rail} Name",
+      "enterPaymentId": "Enter {rail} ID (phone or email)",
+      "enterPaymentName": "Enter account holder name",
+      "withdrawalSuccess": "Withdrawal successful!",
+      "rateUpdateSuccess": "Exchange rate updated!",
+      "paymentInfoSuccess": "Payment info updated!",
+      "viewOnExplorer": "View on Explorer",
+      "withdrawalFailed": "Withdrawal failed",
+      "rateUpdateFailed": "Rate update failed",
+      "paymentInfoFailed": "Payment info update failed",
+      "dismiss": "Dismiss",
+      "loading": "Loading order details...",
+      "orderNotFound": "Order not found",
+      "notAuthorized": "Not Authorized",
+      "notAuthorizedDescription": "You can only view orders that you created. This order belongs to a different wallet.",
+      "backToAccount": "Back to My Account",
+      "goBack": "Go Back",
+      "railAlipay": "Alipay",
+      "railWeChat": "WeChat",
+      "public": "Public",
+      "private": "Private",
+      "privateCode": "Private Code",
+      "privateCodeNote": "Share this code with buyers who should be able to fill your order.",
+      "errors": {
+        "userRejected": "Transaction cancelled - you rejected the request in your wallet.",
+        "notAuthorized": "Not authorized - you are not the owner of this order.",
+        "insufficientBalance": "Insufficient balance - the order does not have enough funds.",
+        "invalidAmount": "Invalid amount - please enter a valid amount.",
+        "invalidRate": "Invalid exchange rate - please enter a valid rate.",
+        "orderNotActive": "Order is not active - it may have been cancelled or completed.",
+        "orderNotFound": "Order not found.",
+        "insufficientGas": "Insufficient ETH for gas fees. Please add more ETH to your wallet.",
+        "networkError": "Network error - please check your connection and try again.",
+        "reverted": "Transaction failed. The amount may exceed the actual available balance.",
+        "unknown": "Transaction failed. Please try again."
+      }
+    }
+  },
+  "home": {
+    "liveBadge": "✓ Live",
+    "comingSoon": "Q2 2026",
+    "wechatComingSoon": "Q3 2026",
+    "scrollToExplore": "Scroll to explore",
+    "currentlySupports": {
+      "title": "currently supports",
+      "payReceive": "Pay & Receive CNY via",
+      "tradeCrypto": "Trade Crypto on"
+    },
+    "stats": {
+      "tradesSettled": "trades settled",
+      "activeOrders": "active orders",
+      "inEscrow": "in escrow"
+    },
+    "hero": {
+      "title": "World's First Trustless",
+      "titleLine2": "CNY-Crypto P2P Exchange",
+      "startTrading": "Start Trading",
+      "howItWorks": "How It Works",
+      "payReceive": "Pay & Receive CNY via",
+      "tradeCrypto": "Trade Crypto on"
+    },
+    "trustPhrases": {
+      "fullyDecentralized": "Fully Decentralized & Transparent",
+      "trustCryptography": "Secured by Cryptography",
+      "noBrokerFees": "No Broker Fees",
+      "autoSettlement": "Automatic Settlement",
+      "permissionless": "Permissionless P2P Exchange"
+    },
+    "whyTrade": {
+      "title": "Why Trade on",
+      "titleHighlight": "LyncZ",
+      "subtitle": "Skip the 2-3% broker spread. Trade peer-to-peer, trustlessly.",
+      "permissionless": {
+        "title": "Decentralized & Permissionless",
+        "description": "No single point of failure, non-custodial, no frozen account risk, trade with anyone peer to peer 24/7."
+      },
+      "trustless": {
+        "title": "Fully Trustless & Transparent",
+        "description": "No humans to trust. Fairness guaranteed by modern cryptography. Our code is all public and open source. We have nothing to hide from you."
+      },
+      "noBrokerFees": {
+        "title": "No Broker Fees",
+        "description": "Users on major P2P platforms like <okx>OKX</okx> suffer 2-3% broker spread. <lyncz>LyncZ</lyncz> offers true peer-to-peer trading with direct settlement between users. You get more value for every exchange."
+      },
+      "autoSettlement": {
+        "title": "Automatic Settlement",
+        "description": "Minimal friction workflow. No interaction between two sides of exchange. Everything settles automatically."
+      }
+    },
+    "howItWorks": {
+      "title": "Simple. Fast.",
+      "titleHighlight": "Revolutionary.",
+      "subtitle": "See how to exchange crypto using <alipay>Alipay</alipay> on <lyncz>LyncZ</lyncz>",
+      "tabs": {
+        "offramp": "Crypto → CNY",
+        "onramp": "CNY → Crypto"
+      },
+      "onramp": {
+        "step1": {
+          "title": "Connect & Select",
+          "description": "Connect your wallet and select an order and amount you want to buy. That amount is then reserved for you in the <lyncz>LyncZ smart contract</lyncz>."
+        },
+        "step2": {
+          "title": "Pay via Alipay",
+          "description": "Pay the seller directly via <alipay>Alipay</alipay> using their payment info. Download your <signed>digitally-signed</signed> <alipay>Alipay</alipay> receipt."
+        },
+        "step3": {
+          "title": "Upload & Receive Crypto",
+          "description": "Upload your receipt. <lyncz>LyncZ smart contract</lyncz> validates the signature on the receipt. Crypto releases to your wallet automatically."
+        }
+      },
+      "offramp": {
+        "step1": {
+          "title": "Create Offer",
+          "description": "Set your exchange rate and <alipay>Alipay</alipay> account. Deposit crypto into the <lyncz>LyncZ smart contract</lyncz>."
+        },
+        "step2": {
+          "title": "Receive CNY & Auto-Release",
+          "description": "When a buyer pays you CNY and uploads their <signed>digitally-signed</signed> receipt, the <lyncz>LyncZ smart contract</lyncz> validates it and releases your crypto automatically."
+        }
+      },
+      "animation": {
+        "sellOrder": "Sell Order",
+        "buyAmount": "Buy amount:",
+        "reserved": "Reserved",
+        "payTo": "Pay to:",
+        "makingPayment": "Making payment...",
+        "digitallySigned": "Digitally-signed",
+        "alipayReceipt": "Alipay receipt",
+        "lyncZContract": "LyncZ Contract",
+        "released": "Released!",
+        "rate": "Rate:",
+        "allSet": "✓ You're all set!"
+      },
+      "exploreLink": "Explore the cryptography behind it"
+    }
+  },
+  "buy": {
+    "title": "Buy Crypto",
+    "subtitle": "Purchase crypto with CNY via Alipay or WeChat Pay",
+    "tabs": {
+      "newOrder": "New Order",
+      "myTrades": "My Trades",
+      "connectWallet": "(Connect Wallet)"
+    },
+    "amountInput": {
+      "title": "Enter Buy Order Info",
+      "description": "Select token and specify how much you want to buy",
+      "section1Title": "What do you want to buy?",
+      "section2Title": "How much do you want?",
+      "section3Title": "Where to receive?",
+      "selectToken": "Select Token",
+      "receiveAt": "Receive Tokens At:",
+      "connected": "✓ Connected",
+      "differentAddress": "Send to a different address",
+      "addressPlaceholder": "0x... (Base network address)",
+      "addressWarning": "Warning: Double-check this address! Tokens will be sent here after payment. Funds sent to wrong address cannot be recovered.",
+      "addressTip": "💡 Tokens will be sent on Base network (L2). Use any EVM-compatible wallet address.",
+      "amountLabel": "Amount",
+      "required": "*",
+      "amountPlaceholder": "100",
+      "amountHelp": "Enter the amount you want to purchase. Minimum trade limits will be validated based on the CNY amount after matching.",
+      "maxRate": "Maximum Exchange Rate (Optional)",
+      "maxRatePlaceholder": "7.50",
+      "maxRateHelp": "Only match with orders at or below this rate (CNY per token)",
+      "getMatch": "Get Match",
+      "finding": "Finding Best Match...",
+      "howItWorks": "How it works:",
+      "step1": "Select the token you want to buy",
+      "step2": "Enter the amount you want to purchase",
+      "step3": "We'll match you with the best exchange rates",
+      "step4": "Review the match plan and confirm",
+      "step5": "Pay the seller via Alipay or WeChat",
+      "step6": "Submit payment proof and receive tokens!",
+      "errors": {
+        "invalidAddress": "Invalid address. Please enter a valid Base/Ethereum address (42 characters starting with 0x).",
+        "noAddress": "Please connect your wallet or enter a receive address",
+        "invalidAmount": "Please enter a valid amount greater than 0",
+        "invalidMaxRate": "Max rate must be greater than 0",
+        "partialFill": "Only {filled} {symbol} available. Requested {requested} {symbol}.",
+        "confirmAddress": "⚠️ IMPORTANT: Confirm Receive Address\n\nTokens will be sent to:\n{address}\n({shortened})\n\nThis address CANNOT be changed later. Please verify it's correct.\n\nClick OK to continue or Cancel to go back."
+      }
+    },
+    "matchReview": {
+      "title": "Review Match Plan",
+      "description": "We've found the best rates for your purchase",
+      "noMatchPlan": "No match plan available. Please go back and try again.",
+      "matchedOrders": "Matched Orders",
+      "order": "Order",
+      "tokenAmount": "Token Amount",
+      "cnyAmount": "CNY Amount",
+      "exchangeRate": "Exchange Rate",
+      "seller": "Seller",
+      "totalSummary": "Total Summary",
+      "totalToken": "Total {symbol}",
+      "totalCnyToPay": "Total CNY to Pay",
+      "averageExchangeRate": "Average Exchange Rate",
+      "paymentBreakdown": "Payment Breakdown",
+      "paymentTo": "Payment {index} to {name}",
+      "back": "Back",
+      "confirmMatch": "Confirm Match"
+    },
+    "executeTrade": {
+      "title": "Creating Your Trades",
+      "description": "Submitting transactions to the blockchain...",
+      "successTitle": "Trades Created Successfully!",
+      "errorTitle": "Trade Creation Failed",
+      "errorDescription": "Something went wrong",
+      "error": {
+        "title": "Transaction Failed",
+        "description": "Unable to create trade on the blockchain"
+      },
+      "processingTitle": "Creating your trades...",
+      "processingDescription": "Calling smart contract...",
+      "submittingTitle": "Submitting transaction to blockchain...",
+      "submittingDescription": "This may take 10-60 seconds. Please don't close this page.",
+      "allSet": "All Set!",
+      "successMessage": "Your trades have been created successfully",
+      "createdTrades": "Created Trades",
+      "trade": "Trade",
+      "amount": "Amount",
+      "paymentTo": "Payment to",
+      "viewTx": "View TX",
+      "continueToPayment": "Continue to Payment",
+      "goBack": "Go Back",
+      "retry": "Retry",
+      "pendingPayment": "PENDING PAYMENT",
+      "preparingTx": "Preparing transaction...",
+      "creatingOnChain": "Creating trade on blockchain...",
+      "syncingToDb": "Syncing trade to database...",
+      "syncingDescription": "Waiting for database sync...",
+      "complete": "Complete",
+      "txSubmitted": "Transaction submitted!",
+      "viewOnExplorer": "View on Explorer"
+    },
+    "paymentInstructions": {
+      "paymentTitle": "💸 Payment",
+      "paymentInstructions": "Payment Instructions",
+      "needHelp": "Need Help?",
+      "alipayAccount": "Account ID",
+      "accountName": "Account Name",
+      "alipayAccountId": "Alipay Account ID",
+      "alipayAccountName": "Alipay Account Name",
+      "amountToTransfer": "Amount to Transfer",
+      "paymentNoteCritical": "Payment Note (CRITICAL)",
+      "mustInclude": "You MUST include this exact number in the payment note field!",
+      "viewTrade": "View Trade",
+      "viewProof": "View Proof",
+      "uploadPdf": "Upload Electronic Receipt PDF",
+      "chooseFile": "Choose File",
+      "noFileChosen": "No file chosen",
+      "uploadHelp": "Upload the electronic receipt PDF. Maximum file size: 10MB",
+      "howToGetReceipt": "How to get receipt?",
+      "howToPayAlipay": "How to pay?",
+      "tutorial": {
+        "title": "Payment Instructions",
+        "stepOf": "Step {current} of {total}",
+        "previous": "Previous",
+        "next": "Next",
+        "gotIt": "Got it!",
+        "step1": {
+          "title": "Open Payment App",
+          "description": "Open Alipay or WeChat and navigate to transfer/payment.",
+          "instructions": "Instructions",
+          "step1": "Open your payment app (Alipay or WeChat)",
+          "step2": "Tap on \"Transfer\" or navigate to payment section",
+          "step3": "Select \"Transfer to Account\"",
+          "important": "Important:",
+          "importantNote": "Make sure you're transferring to the correct account type."
+        },
+        "step2": {
+          "title": "Enter Payment Details",
+          "description": "Enter the recipient's account and the payment amount.",
+          "recipientId": "Recipient Account ID",
+          "recipientName": "Recipient Name",
+          "amountToTransfer": "Amount to Transfer",
+          "critical": "Critical:",
+          "criticalNote": "Double-check the recipient information matches exactly!"
+        },
+        "step3": {
+          "title": "Add Payment Note (CRITICAL)",
+          "description": "This is the most important step! You MUST include the exact payment note.",
+          "criticalStep": "CRITICAL STEP",
+          "mustAdd": "You MUST add this exact payment note. Without it, your payment cannot be verified!",
+          "paymentNote": "Payment Note",
+          "exampleScreenshot": "Example Screenshot",
+          "screenshotAlt": "Screenshot shows where to add the payment note",
+          "tip": "Tip:",
+          "tipNote": "Look for \"留言\" (message) or \"备注\" (note) field and paste this exact number."
+        },
+        "step4": {
+          "title": "Complete the Transfer",
+          "description": "Review all details and complete the payment.",
+          "finalChecklist": "Final Checklist",
+          "recipientId": "Recipient Account ID:",
+          "amount": "Amount:",
+          "paymentNote": "Payment Note:",
+          "afterVerifying": "After verifying all details:",
+          "step1": "Tap \"Confirm Transfer\"",
+          "step2": "Complete the payment authentication",
+          "step3": "Wait for the success confirmation"
+        },
+        "step5": {
+          "title": "Request Payment Receipt",
+          "description": "After payment, download the official PDF receipt.",
+          "gettingReceipt": "Getting Your Receipt",
+          "needReceipt": "You need an official PDF receipt to complete the verification.",
+          "howToFind": "How to Find the Receipt",
+          "step1": "Go to your transaction history",
+          "step2": "Find your recent transfer to {name}",
+          "step3": "Tap on the transaction to view details",
+          "step4": "Look for \"Electronic Receipt\" or \"Download Receipt\"",
+          "step5": "Tap it and select \"Download PDF\" or \"Save\"",
+          "receiptScreenshot": "Receipt Screenshot",
+          "screenshotAlt": "Screenshot shows where to request the electronic receipt",
+          "note": "Note:",
+          "noteText": "It may take a few minutes for the receipt to be generated. Wait 1-2 minutes if not available immediately."
+        },
+        "step6": {
+          "title": "Upload Receipt",
+          "description": "Upload the PDF receipt to complete your trade.",
+          "almostDone": "Almost Done!",
+          "onceDownloaded": "Once you have the PDF receipt downloaded:",
+          "step1": "Close this tutorial",
+          "step2": "Click the \"Choose File\" button below",
+          "step3": "Select the PDF receipt you just downloaded",
+          "step4": "Wait for the automated verification to complete",
+          "step5": "If successful, your crypto will be released automatically! 🚀",
+          "reminder": "Reminder:",
+          "reminderText": "Make sure to upload the receipt before the timer expires!"
+        }
+      },
+      "validationErrors": {
+        "replay_attack": "This payment receipt has already been used for another trade. Please use a different payment.",
+        "payment_too_old": "This payment was made before the trade was created. Please make a new payment after creating the trade.",
+        "hash_mismatch": "The payment details in the PDF don't match this trade. Please check you uploaded the correct receipt.",
+        "unknown": "Unable to verify the payment receipt. Please check the PDF and try again."
+      },
+      "paymentTutorial": {
+        "title": "How to Pay with Alipay",
+        "stepOf": "Step {current} of {total}",
+        "previous": "Previous",
+        "next": "Next",
+        "gotIt": "Got it!",
+        "step1": {
+          "title": "Search Account",
+          "description": "Open Alipay and search for seller",
+          "instruction": "Click the search bar and enter the seller's account ID",
+          "searchFor": "Search for:"
+        },
+        "step2": {
+          "title": "Click Transfer",
+          "description": "Find seller and click transfer button",
+          "instruction": "Find the seller under \"可能想找的人\" and click \"转账\"",
+          "findSeller": "Find this seller:"
+        },
+        "step3": {
+          "title": "Enter Amount",
+          "description": "Enter the exact amount and transfer",
+          "instruction": "Enter this exact amount and complete the transfer",
+          "noNote": "Do NOT add any notes or comments"
+        }
+      },
+      "receiptTutorial": {
+        "title": "How to Get Your Receipt",
+        "stepOf": "Step {current} of {total}",
+        "previous": "Previous",
+        "next": "Next",
+        "gotIt": "Got it!",
+        "step1": {
+          "title": "Open Bills",
+          "description": "Open Alipay → My → Bills",
+          "instruction": "Tap \"Bills\" (账单) in the menu"
+        },
+        "step2": {
+          "title": "Find Transaction",
+          "description": "Find your transfer to {name}",
+          "lookFor": "Find this seller:"
+        },
+        "step3": {
+          "title": "Request Receipt",
+          "description": "Tap \"申请电子回单\"",
+          "warningText": "Click \"申请电子回单\", NOT \"转账凭证\"",
+          "correct": "Click This",
+          "wrong": "NOT This"
+        },
+        "step4": {
+          "title": "Apply",
+          "description": "Tap the Apply button",
+          "instruction": "Tap the blue \"申请\" button"
+        },
+        "step5": {
+          "title": "Enter Email",
+          "description": "Enter your email address",
+          "instruction": "Enter email to receive the PDF"
+        },
+        "step6": {
+          "title": "Confirm Name",
+          "description": "Verify seller's name",
+          "instruction": "Enter seller's last name and tap \"确定\"",
+          "enterName": "Enter this:"
+        },
+        "step7": {
+          "title": "Done",
+          "description": "Receipt will be sent to your email",
+          "success": "Success!",
+          "instruction": "Check your email, download PDF, then upload here"
+        }
+      }
+    },
+    "processingSection": {
+      "phase1": {
+        "title": "Pre-check Receipt",
+        "shortTitle": "Check",
+        "description": "Verifying PDF before proof generation",
+        "estimatedTime": "~30s",
+        "file": "File:",
+        "uploading": "📤 Uploading PDF...",
+        "validating": "Pre-checking your payment receipt...",
+        "validationComplete": "✅ Pre-check passed!",
+        "validationFailed": "Pre-check failed. Please check your PDF and try again."
+      },
+      "phase2": {
+        "title": "Generate zkVM Proof",
+        "shortTitle": "Prove",
+        "description": "Requesting zero-knowledge proof from zkVM",
+        "generatingDescription": "Generating zkVM proof",
+        "estimatedTime": "~5-10 min",
+        "requesting": "Requesting zkVM proof generation...",
+        "generating": "Generating zero-knowledge proof (~5-10 min)...",
+        "downloading": "Downloading proof",
+        "pleaseWait": "Please wait:",
+        "waitMessage": "This process takes 5-10 minutes.",
+        "dontClose": "Don't close this page",
+        "canLeave": "You can safely leave now! We'll complete the trade automatically. Check 'My Purchases' for updates.",
+        "proofGenerated": "✅ Proof generated!",
+        "proofFailed": "Proof generation failed. Please try again."
+      },
+      "phase3": {
+        "title": "Settle on Blockchain",
+        "shortTitle": "Settle",
+        "description": "Submitting proof to smart contract",
+        "estimatedTime": "~30s",
+        "submitting": "📤 Submitting to blockchain...",
+        "transactionHash": "Transaction Hash:",
+        "proofSubmitted": "✅ Submitted! Awaiting confirmation..."
+      },
+      "errors": {
+        "settlementFailed": "Settlement failed. Please try with a different payment receipt or contact support.",
+        "proofTimeout": "Proof generation timed out. Please try again or contact support.",
+        "already_used": "This payment receipt has already been used. Please make a new payment.",
+        "not_pending": "This trade is no longer pending. It may have already been settled or cancelled.",
+        "expired": "This trade has expired. The payment window has closed.",
+        "verification_failed": "Unable to verify the payment receipt. Please ensure the PDF is valid and try again."
+      }
+    },
+    "errorAlerts": {
+      "proofFailed": {
+        "title": "❌ Proof Generation Failed",
+        "description": "The zero-knowledge proof could not be generated. Please try again later or contact support.",
+        "tryAgain": "Try Again"
+      },
+      "validationFailed": {
+        "title": "❌ PDF Validation Failed",
+        "description": "Please ensure you uploaded the correct payment receipt PDF with the exact payment details shown above.",
+        "tryAgain": "Try Again"
+      },
+      "processing": {
+        "generating": "Generating proof...",
+        "file": "File:",
+        "wait": "This may take a few minutes. Please do not close this page."
+      },
+      "settled": {
+        "message": "✅ Trade settled! Crypto has been sent to your wallet."
+      },
+      "expired": {
+        "message": "⏰ Payment window expired. This trade can be cancelled."
+      }
+    },
+    "myTrades": {
+      "loading": "Loading your trades...",
+      "error": "Failed to load trades. Please try again.",
+      "noTrades": "You don't have any trades yet. Buy some crypto to get started!",
+      "pendingTrades": "Pending Trades",
+      "completedTrades": "Completed Trades",
+      "pendingPurchases": "Pending Purchases",
+      "completedPurchases": "Completed Purchases",
+      "pending": "Pending",
+      "completed": "Completed",
+      "noPending": "You have no pending purchases.",
+      "noCompleted": "You have no completed purchases yet.",
+      "trade": "Trade:",
+      "created": "Created",
+      "pendingPayment": "Pending Payment",
+      "settled": "Settled",
+      "expired": "Expired",
+      "tokenReceived": "Token Received",
+      "tokenToReceive": "Token to Receive",
+      "cnyPaid": "CNY Paid",
+      "cnyToPay": "CNY to Pay",
+      "timeLeft": "Time Left",
+      "expiresAt": "Expires At",
+      "settledAt": "Settled At",
+      "expiredAt": "Expired At",
+      "viewCreationTx": "View Creation TX",
+      "viewSettlementTx": "View Settlement TX",
+      "expiredWarning": "This trade has expired. The auto-cancel service will clean it up shortly.",
+      "continuePayment": "Continue Payment",
+      "proofGenerating": "Sending to OpenVM for Proof Generation...",
+      "proofGeneratingHint": "You can safely close this page. Your purchase is guaranteed to complete and you'll be notified in My Account when tokens arrive in your wallet.",
+      "newlySettled": "New",
+      "purchaseComplete": "Purchase Complete!",
+      "tokensReceived": "Tokens have been sent to your wallet",
+      "backToTrades": "Back to Trades"
+    },
+    "progress": {
+      "step": "Step",
+      "enterInfo": "Enter Info",
+      "selectOrder": "Select Order",
+      "createTrade": "Create Trade",
+      "submitProof": "Submit Proof",
+      "settled": "Settled"
+    },
+    "buyerInfo": {
+      "title": "What do you want to buy?",
+      "subtitle": "Enter your order details to browse available sellers",
+      "tokenAmount": "Token & Amount",
+      "selectToken": "Select Token",
+      "amount": "Amount",
+      "cnyAmount": "CNY Amount (¥)",
+      "cnyAmountNote": "Enter whole yuan amount only (no decimals)",
+      "paymentMethod": "Payment Method",
+      "soon": "Soon",
+      "receiveAddress": "Receive Address",
+      "connectedWallet": "Connected Wallet",
+      "connected": "✓ Connected",
+      "useDifferentAddress": "Use a different address",
+      "addressPlaceholder": "0x... (Base network address)",
+      "useConnectedWallet": "Use connected wallet instead",
+      "addressTip": "💡 Tokens will be sent on Base network (L2). Use any EVM-compatible wallet address.",
+      "browseOrders": "Browse Available Orders",
+      "errors": {
+        "invalidAmount": "Please enter a valid amount greater than 0",
+        "noAddress": "Please connect your wallet or enter a receive address",
+        "invalidAddress": "Invalid Ethereum address. Please check and try again."
+      },
+      "privateCode": {
+        "title": "Have a Private Code?",
+        "subtitle": "Access unlisted orders with a 6-digit code",
+        "enterCode": "Enter 6-digit code",
+        "placeholder": "000000",
+        "invalid": "Please enter a valid 6-digit code",
+        "notFound": "No order found with this code",
+        "orderFound": "Order Found!",
+        "token": "Token",
+        "rate": "Rate",
+        "available": "Available",
+        "purchasable": "Purchasable",
+        "totalInOrder": "Total in order",
+        "feeReserved": "Fee reserved",
+        "maxPurchaseCny": "Max purchase",
+        "exceedsAvailable": "Amount exceeds available. Maximum: ¥{max}",
+        "continueWithOrder": "Continue with This Order"
+      }
+    },
+    "orderSelector": {
+      "title": "Select an Order",
+      "buying": "Buying",
+      "paying": "Paying",
+      "for": "for",
+      "via": "via",
+      "loading": "Loading available orders...",
+      "sortBy": "Sort by",
+      "bestRateFirst": "Best Rate First",
+      "highestRateFirst": "Highest Rate First",
+      "newestFirst": "Newest First",
+      "oldestFirst": "Oldest First",
+      "ordersAvailable": "{count} order(s) available",
+      "pageOf": "Page {current} of {total}",
+      "noOrders": "No orders available for {amount} {symbol} via {rail}",
+      "noOrdersForAmount": "No orders available for ¥{amount} CNY via {rail}",
+      "tryReducing": "Try reducing the amount or checking back later.",
+      "tryDifferentAmount": "Try a different amount or check back later.",
+      "goBack": "Go Back",
+      "rate": "Rate",
+      "bestRate": "Best Rate",
+      "available": "Available",
+      "youPay": "You pay",
+      "youReceive": "You receive",
+      "youWillReceive": "You'll receive",
+      "fee": "Fee",
+      "seller": "Seller",
+      "created": "Created",
+      "previous": "Previous",
+      "next": "Next",
+      "back": "Back",
+      "continueWithSelected": "Continue with Selected Order",
+      "continue": "Continue",
+      "havePrivateCode": "Have a private code?",
+      "privateCodePlaceholder": "000000",
+      "privateCodeInvalid": "Please enter a valid 6-digit code",
+      "privateCodeNotFound": "No order found with this code",
+      "privateCodeWrongToken": "This order is for a different token (not {token})",
+      "privateCodeWrongRail": "This order uses a different payment method",
+      "privateCodeInsufficientBalance": "This order doesn't have enough balance for your amount",
+      "privateOrderFound": "Private Order Found!",
+      "selectThisOrder": "Select This Order",
+      "orBrowsePublic": "or browse public orders"
+    },
+    "settled": {
+      "emoji": "🎉",
+      "title": "Your Trade is Complete!",
+      "subtitle": "Your crypto has been sent to your wallet.",
+      "settlementTx": "Settlement Transactions:",
+      "viewTx": "View Settlement TX on Explorer",
+      "newPurchase": "Start New Purchase"
+    },
+    "connectPrompt": "Please connect your wallet to view your trades"
+  },
+  "sell": {
+    "title": "Sell Crypto",
+    "subtitle": "Sell crypto for CNY via Alipay or WeChat Pay",
+    "tabs": {
+      "create": "Create Order",
+      "manage": "My Orders"
+    },
+    "manageView": {
+      "orders": "My Orders",
+      "trades": "My Trades"
+    },
+    "createOrder": {
+      "title": "Create Sell Order",
+      "subtitle": "Lock your crypto and set your exchange rate to start earning",
+      "workflow": {
+        "title": "How it works:",
+        "description": "Lock your crypto in escrow, buyers pay you via Alipay or WeChat, they submit a ZK proof, and you receive CNY. Your funds are protected by smart contracts."
+      },
+      "connectWallet": {
+        "title": "Connect Your Wallet",
+        "subtitle": "Please connect your wallet to create a sell order",
+        "prompt": "Click the <strong>Connect Wallet</strong> button in the top right corner to get started"
+      },
+      "section1": {
+        "title": "What are you selling?",
+        "selectToken": "Select Token",
+        "amount": "Amount",
+        "balance": "Balance:"
+      },
+      "section2": {
+        "title": "Your exchange rate",
+        "exchangeRate": "Exchange Rate (CNY per {symbol})",
+        "totalValue": "Total value",
+        "platformFeeFlat": "Platform fee (per trade)",
+        "feeExplanation1": "We charge a flat fee per trade, regardless of amount. Whether you trade ¥10 or ¥10,000, the fee stays the same.",
+        "feeExplanation2": "Public orders: 0.2 USDC/trade. Private orders: 0.4 USDC/trade.",
+        "cny": "CNY"
+      },
+      "section3": {
+        "title": "Receive CNY payments",
+        "subtitle": "Choose how buyers will pay you",
+        "paymentRail": "Buyers will pay you via",
+        "alipay": "Alipay",
+        "wechat": "WeChat Pay",
+        "wechatComingSoon": "WeChat Pay (Coming Soon)",
+        "comingSoon": "Coming Soon",
+        "alipayId": "Your Alipay ID",
+        "alipayIdPlaceholder": "Email or phone number linked to your Alipay",
+        "alipayIdWarning": "<strong>⚠️ Important:</strong> Buyers will send CNY to this Alipay account.",
+        "alipayRecipientName": "Your Alipay recipient name",
+        "alipayRecipientNamePlaceholder": "Name shown on your Alipay account"
+      },
+      "section4": {
+        "title": "Listing Mode",
+        "listingMode": "How should your order be listed?",
+        "public": "Public",
+        "publicDesc": "Visible to all buyers",
+        "private": "Private",
+        "privateDesc": "Share code with buyers",
+        "privateNote": "A 6-digit private code will be generated. Only buyers with this code can access and fill your order."
+      },
+      "steps": {
+        "approving": "<strong>Step 1/2:</strong> Approving {symbol} spending...",
+        "creating": "<strong>Step 2/2:</strong> Creating and locking order...",
+        "transaction": "Tx:"
+      },
+      "buttons": {
+        "createOrder": "Create Order",
+        "approving": "Approving {symbol}...",
+        "creating": "Creating Order..."
+      },
+      "note": {
+        "title": "📋 Note:",
+        "description": "You will need to confirm two transactions:",
+        "step1": "Approve {symbol} spending for the escrow contract",
+        "step2": "Create and lock your sell order"
+      },
+      "success": {
+        "title": "Order Created Successfully!",
+        "subtitle": "Your order is now live on the marketplace",
+        "subtitlePrivate": "Your private order has been created",
+        "amount": "Amount:",
+        "rate": "Rate:",
+        "totalValue": "Total Value:",
+        "cny": "CNY",
+        "txHash": "Transaction Hash:",
+        "viewOnBaseScan": "View on BaseScan",
+        "info": "Your order will appear on the homepage once the transaction is confirmed and synced.",
+        "infoTime": "This usually takes 10-30 seconds.",
+        "viewMyOrders": "View My Orders",
+        "createAnother": "Create Another Order",
+        "privateCode": "Your Private Code",
+        "generatingCode": "Generating private code...",
+        "privateCodeNote": "Share this code with buyers who should be able to fill your order."
+      },
+      "errors": {
+        "userRejected": "Transaction cancelled - you rejected the request in your wallet.",
+        "insufficientBalance": "Insufficient token balance. Please check your wallet balance.",
+        "insufficientAllowance": "Token approval failed. Please try again.",
+        "insufficientGas": "Insufficient ETH for gas fees. Please add more ETH to your wallet.",
+        "networkError": "Network error - please check your connection and try again.",
+        "contractError": "Transaction failed on-chain. Please try again.",
+        "unknown": "An error occurred. Please try again."
+      }
+    },
+    "notifications": {
+      "title": "Email Notifications",
+      "description": "Get email notifications for all your trading activity",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "your@email.com",
+      "languageLabel": "Email Language",
+      "notificationsOn": "Notifications enabled",
+      "notificationsOff": "Notifications paused",
+      "saved": "Email notifications enabled!",
+      "saveFailed": "Failed to save settings. Please try again.",
+      "deleted": "Email notifications disabled.",
+      "deleteFailed": "Failed to delete settings. Please try again.",
+      "invalidEmail": "Please enter a valid email address.",
+      "saving": "Saving...",
+      "save": "Enable Notifications",
+      "update": "Update Settings",
+      "delete": "Delete",
+      "infoText": "You'll receive emails when: you create an order, someone buys your order, you purchase an order, a trade settles, or a trade expires."
+    },
+    "myOrders": {
+      "loading": "Loading your orders...",
+      "error": "Failed to load orders. Please try again.",
+      "empty": "You don't have any orders. Create one to get started!",
+      "activeOrders": "Active Orders",
+      "completedOrders": "Completed Orders",
+      "active": "Active",
+      "completed": "Completed",
+      "public": "Public",
+      "private": "Private",
+      "orderPrefix": "Order:",
+      "created": "Created",
+      "totalLocked": "Total Locked",
+      "remaining": "Remaining",
+      "exchangeRate": "Exchange Rate",
+      "estValue": "Est. CNY Value",
+      "withdrawAmount": "Withdraw Amount ({symbol})",
+      "available": "Available:",
+      "withdraw": "Withdraw",
+      "withdrawing": "Signing...",
+      "confirming": "Confirming...",
+      "allFundsWithdrawn": "All funds from this order have been withdrawn or filled.",
+      "viewActivity": "Click to view all activity",
+      "clickToManage": "Click to manage order and view activity",
+      "withdrawSuccess": "Withdrawal successful!",
+      "viewOnExplorer": "View on Explorer",
+      "noActiveOrders": "You have no active orders. All your orders have been completed or you haven't created any yet.",
+      "noCompletedOrders": "You have no completed orders yet.",
+      "trades": "Trades",
+      "settledTrades": "Settled Trades",
+      "pending": "Pending",
+      "settled": "Settled",
+      "expired": "Expired",
+      "amount": "Amount",
+      "buyerReceived": "Buyer received",
+      "platformFee": "Platform fee",
+      "totalDeducted": "Total deducted",
+      "cnyReceived": "CNY received",
+      "buyer": "Buyer",
+      "viewSettlement": "View Settlement TX",
+      "errors": {
+        "userRejected": "Transaction cancelled - you rejected the request in your wallet.",
+        "notAuthorized": "Not authorized - you are not the owner of this order.",
+        "insufficientBalance": "Insufficient balance - the order does not have enough funds to withdraw.",
+        "invalidAmount": "Invalid amount - please enter a valid withdrawal amount.",
+        "invalidRate": "Invalid exchange rate - please enter a valid rate.",
+        "orderNotActive": "Order is not active - it may have been cancelled or completed.",
+        "orderNotFound": "Order not found - it may have been removed.",
+        "insufficientGas": "Insufficient ETH for gas fees. Please add more ETH to your wallet.",
+        "networkError": "Network error - please check your connection and try again.",
+        "reverted": "Transaction failed on-chain. The amount may exceed available balance.",
+        "unknown": "Transaction failed. Please try again."
+      },
+      "dismiss": "Dismiss"
+    },
+    "myTrades": {
+      "loading": "Loading your trades...",
+      "error": "Failed to load trades. Please try again.",
+      "empty": "No trades on your orders yet. When buyers purchase from your orders, they will appear here.",
+      "pendingTrades": "Pending Trades",
+      "completedTrades": "Completed Trades",
+      "tradePrefix": "Trade:",
+      "created": "Created",
+      "settled": "Settled",
+      "expired": "Expired",
+      "pending": "Pending",
+      "tokenReceived": "Token Amount",
+      "cnyPaid": "CNY Amount",
+      "orderRef": "Order",
+      "buyer": "Buyer",
+      "settledAt": "Settled At",
+      "expiredAt": "Expired At",
+      "viewCreationTx": "View Creation TX",
+      "viewSettlementTx": "View Settlement TX",
+      "noPendingTrades": "No pending trades. When buyers initiate trades on your orders, they will appear here.",
+      "noCompletedTrades": "No completed trades yet."
+    }
+  },
+  "telegram": {
+    "title": "Join Our Telegram Community",
+    "description": "Get real-time updates, technical support, and connect with the LyncZ community.",
+    "joinButton": "Join Channel",
+    "members": "Members",
+    "online": "Online"
+  },
+  "orderCard": {
+    "active": "Active",
+    "available": "Available",
+    "orderId": "Order ID",
+    "paymentRail": {
+      "alipay": "Alipay",
+      "wechat": "WeChat"
+    }
+  },
+  "seller": {
+    "notificationSettings": {
+      "title": "Email Notifications",
+      "description": "Get email notifications for all your trading activity",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "your@email.com",
+      "languageLabel": "Email Language",
+      "notificationsOn": "Notifications Enabled",
+      "notificationsOff": "Notifications Disabled",
+      "save": "Enable Notifications",
+      "update": "Update Settings",
+      "saving": "Saving...",
+      "delete": "Remove",
+      "infoText": "You'll receive emails when: you create an order, someone buys your order, you purchase an order, a trade settles, or a trade expires.",
+      "successSaved": "Email saved successfully!",
+      "successRemoved": "Email removed successfully!",
+      "errorSave": "Failed to save email",
+      "errorRemove": "Failed to remove email",
+      "errorLoad": "Failed to load settings"
+    }
+  },
+  "footer": {
+    "description": "LyncZ: The trustless CNY-crypto exchange. Secured by cryptography.",
+    "quickLinks": "Quick Links",
+    "buy": "Buy Crypto",
+    "sell": "Sell Crypto",
+    "myAccount": "My Account",
+    "investors": "Investors",
+    "about": "About",
+    "resources": "Resources",
+    "docs": "Documentation",
+    "telegram": {
+      "title": "Join Our Telegram",
+      "subtitle": "Get updates, support, and connect with the community",
+      "join": "Join Channel"
+    },
+    "rights": "All rights reserved.",
+    "beta": "BETA",
+    "live": "Live",
+    "network": "Base Mainnet"
+  },
+  "contractErrors": {
+    "amountBelowMinimum": "Trade amount is below the minimum (¥700.00). Please increase your purchase amount.",
+    "amountExceedsAvailable": "The requested amount exceeds what's available in this order. Try a smaller amount or refresh to see updated availability.",
+    "withdrawalExceedsAvailable": "Withdrawal amount exceeds the order's remaining balance.",
+    "amountTooLarge": "Trade amount exceeds the maximum (¥72,000.00). Please reduce your purchase amount.",
+    "orderNotFound": "This order no longer exists. It may have been filled or cancelled. Please refresh and try a different order.",
+    "tradeNotFound": "Trade not found. Please refresh and try again.",
+    "tradeNotPending": "This trade is no longer pending. It may have already been settled or expired.",
+    "tradeNotExpired": "This trade has not expired yet and cannot be cancelled.",
+    "notAuthorized": "You are not authorized to perform this action.",
+    "proofVerificationFailed": "Payment proof verification failed. Please ensure you uploaded the correct Alipay payment receipt.",
+    "paymentDetailsMismatch": "Payment details do not match the trade requirements. Please check the payment amount and recipient.",
+    "transferFailed": "Token transfer failed. Please check your wallet balance and approvals.",
+    "ownableUnauthorizedAccount": "Unauthorized: Only the contract owner can perform this action.",
+    "unknownError": "An unexpected error occurred. Please try again or contact support."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "lyncz",
+  "version": "0.1.0",
+  "private": true,
+  "description": "LyncZ - Universal ZK-Verification Infrastructure for Off-chain Financial Data",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "clean": "turbo run clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
+  }
+}
+

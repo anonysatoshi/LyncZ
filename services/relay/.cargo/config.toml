@@ -1,0 +1,4 @@
+[env]
+# Enable offline mode for sqlx (uses cached query data in .sqlx folder)
+SQLX_OFFLINE = "true"
+

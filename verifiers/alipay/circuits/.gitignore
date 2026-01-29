@@ -1,0 +1,19 @@
+# Cargo build
+**/target
+
+# Proofs
+**/proof-with-pis.json
+**/proof-with-io.json
+
+# Generated input
+**/cli_input.json
+
+# Axiom Proving API
+**/.axiom/
+**/axiom-artifacts/
+
+# MacOS
+.DS_Store
+
+# Environment
+.env
