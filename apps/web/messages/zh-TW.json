@@ -17,7 +17,12 @@
     "noPosts": "暫無文章",
     "checkBackSoon": "敬請期待更多內容！",
     "backToHome": "返回首頁",
-    "backToBlog": "返回部落格"
+    "backToBlog": "返回部落格",
+    "demoSectionTitle": "動畫演示",
+    "demoStep1": "連接錢包並選擇訂單",
+    "demoStep2": "通過支付寶付款",
+    "demoStep3": "上傳收據並收到加密貨幣",
+    "seeAnimatedDemo": "在首頁查看完整動畫演示"
   },
   "account": {
     "title": "我的帳戶",

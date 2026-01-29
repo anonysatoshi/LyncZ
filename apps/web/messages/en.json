@@ -17,7 +17,12 @@
     "noPosts": "No posts yet",
     "checkBackSoon": "Check back soon for updates!",
     "backToHome": "Back to Home",
-    "backToBlog": "Back to Blog"
+    "backToBlog": "Back to Blog",
+    "demoSectionTitle": "Animated demo",
+    "demoStep1": "Connect & select order",
+    "demoStep2": "Pay via Alipay",
+    "demoStep3": "Upload receipt & receive crypto",
+    "seeAnimatedDemo": "See the full animated demo on our homepage"
   },
   "account": {
     "title": "My Account",

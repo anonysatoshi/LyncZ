@@ -17,7 +17,12 @@
     "noPosts": "暂无文章",
     "checkBackSoon": "敬请期待更多内容！",
     "backToHome": "返回首页",
-    "backToBlog": "返回博客"
+    "backToBlog": "返回博客",
+    "demoSectionTitle": "动画演示",
+    "demoStep1": "连接钱包并选择订单",
+    "demoStep2": "通过支付宝付款",
+    "demoStep3": "上传收据并收到加密货币",
+    "seeAnimatedDemo": "在首页查看完整动画演示"
   },
   "account": {
     "title": "我的账户",
