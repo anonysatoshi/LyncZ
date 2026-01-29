@@ -38,14 +38,18 @@ export async function getBlogPosts(): Promise<BlogPost[]> {
       ],
     });
 
-    return response.results.map((page: any) => ({
-      id: page.id,
-      title: page.properties.Name?.title?.[0]?.plain_text || 'Untitled',
-      slug: page.properties.Slug?.rich_text?.[0]?.plain_text || page.id,
-      summary: page.properties.Summary?.rich_text?.[0]?.plain_text || '',
-      date: page.properties.Date?.date?.start || new Date().toISOString().split('T')[0],
-      published: page.properties.Published?.checkbox || false,
-    }));
+    return response.results.map((page: any) => {
+      const titleProp = Object.values(page.properties).find((p: any) => p.type === 'title');
+      const title = titleProp?.title?.[0]?.plain_text || page.properties.Name?.title?.[0]?.plain_text || 'Untitled';
+      return {
+        id: page.id,
+        title,
+        slug: page.properties.Slug?.rich_text?.[0]?.plain_text || page.id,
+        summary: page.properties.Summary?.rich_text?.[0]?.plain_text || '',
+        date: page.properties.Date?.date?.start || new Date().toISOString().split('T')[0],
+        published: page.properties.Published?.checkbox || false,
+      };
+    });
   } catch (error) {
     console.error('Error fetching blog posts:', error);
     return [];
@@ -80,7 +84,9 @@ export async function getBlogPostBySlug(slug: string): Promise<BlogPostWithConte
     }
 
     const page: any = response.results[0];
-    
+    const titleProp = Object.values(page.properties).find((p: any) => p.type === 'title');
+    const title = titleProp?.title?.[0]?.plain_text || page.properties.Name?.title?.[0]?.plain_text || 'Untitled';
+
     // Get page content (blocks)
     const blocks = await notion.blocks.children.list({
       block_id: page.id,
@@ -90,7 +96,7 @@ export async function getBlogPostBySlug(slug: string): Promise<BlogPostWithConte
 
     return {
       id: page.id,
-      title: page.properties.Name?.title?.[0]?.plain_text || 'Untitled',
+      title,
       slug: page.properties.Slug?.rich_text?.[0]?.plain_text || page.id,
       summary: page.properties.Summary?.rich_text?.[0]?.plain_text || '',
       date: page.properties.Date?.date?.start || new Date().toISOString().split('T')[0],
