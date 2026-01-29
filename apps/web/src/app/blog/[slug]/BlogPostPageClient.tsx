@@ -4,8 +4,6 @@ import Link from 'next/link';
 import { useTranslations, useLocale } from 'next-intl';
 import { ArrowLeft, Calendar } from 'lucide-react';
 import type { BlogPostWithContent } from '@/lib/notion';
-import HowLyncZWorksDemo from '@/components/blog/HowLyncZWorksDemo';
-import TraditionalP2PVsLyncZTable from '@/components/blog/TraditionalP2PVsLyncZTable';
 
 function formatDate(dateStr: string, locale: string): string {
   const date = new Date(dateStr);
@@ -75,14 +73,6 @@ export default function BlogPostPageClient({ post }: { post: BlogPostWithContent
               prose-td:border prose-td:border-slate-200 dark:prose-td:border-slate-700 prose-td:px-4 prose-td:py-2"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
-
-          {/* Pitch-deck "vs Traditional P2P" table for LyncZ is Live post */}
-          {(post.slug === 'lyncz-is-live' || post.slug === 'lync-is-live') && (
-            <TraditionalP2PVsLyncZTable />
-          )}
-
-          {/* Animated demo section for How LyncZ Works post */}
-          {post.slug === 'how-lyncz-works' && <HowLyncZWorksDemo />}
         </article>
 
         {/* Footer */}
