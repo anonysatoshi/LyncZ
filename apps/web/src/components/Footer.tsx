@@ -14,13 +14,14 @@ export function Footer() {
   const isSimplifiedChinese = locale === 'zh-CN';
   const isChinese = isTraditionalChinese || isSimplifiedChinese;
   
-  // Use correct Traditional/Simplified Chinese logo
+  // Use same logo as Navigation (logo-compact*) for consistent look
   const logoSrc = isTraditionalChinese 
-    ? '/logo-zh-TW.svg' 
+    ? '/logo-compact-zh-TW.svg' 
     : isSimplifiedChinese 
-      ? '/logo-zh.svg' 
-      : '/logo.svg';
+      ? '/logo-compact-zh.svg' 
+      : '/logo-compact.svg';
   const logoAlt = isTraditionalChinese ? '靈犀支付' : isSimplifiedChinese ? '灵犀支付' : 'LyncZ';
+  const logoWidth = isChinese ? 160 : 130;
 
   return (
     <footer className="relative z-20 bg-slate-50/80 dark:bg-slate-950/50 backdrop-blur-sm">
@@ -34,14 +35,13 @@ export function Footer() {
                 alt="LyncZ Icon" 
                 width={40}
                 height={40}
-                className="rounded-lg opacity-90"
+                className="rounded-lg"
               />
               <Image 
                 src={logoSrc}
                 alt={logoAlt} 
-                width={isChinese ? 160 : 130}
+                width={logoWidth}
                 height={40}
-                className="opacity-90"
               />
             </div>
             <p className="text-sm text-slate-500 dark:text-slate-400 mb-6 max-w-md leading-relaxed">
