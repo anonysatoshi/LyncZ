@@ -7,7 +7,7 @@ import { getTokenInfo, formatTokenAmount, formatTokenAmountFloor, getExactTokenA
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Alert, AlertDescription } from '@/components/ui/alert';
-import { AlertCircle, CheckCircle2, Loader2, ChevronRight, Globe, Lock } from 'lucide-react';
+import { AlertCircle, Loader2, ChevronRight, Globe, Lock } from 'lucide-react';
 import { useState } from 'react';
 import { Order } from '@/lib/api';
 import { useTranslations } from 'next-intl';
@@ -109,13 +109,6 @@ export function MyOrders() {
               </CardDescription>
             </div>
             <div className="flex items-center gap-2">
-              {/* Status Badge - Only show for completed orders (Active is redundant in Active tab) */}
-              {isCompleted && (
-                <span className="inline-flex items-center text-xs font-medium px-2.5 py-1 rounded-xl bg-transparent backdrop-blur-sm border border-slate-400/20 text-slate-500 dark:text-slate-400 shadow-sm shadow-slate-500/5">
-                  <CheckCircle2 className="h-3 w-3 mr-1.5" />
-                  {t('completed')}
-                </span>
-              )}
               <ChevronRight className="h-5 w-5 text-slate-400" />
             </div>
           </div>
