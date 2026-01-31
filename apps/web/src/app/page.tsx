@@ -6,13 +6,6 @@ import { Button } from '@/components/ui/button';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { useEffect, useState, useRef } from 'react';
-import { api } from '@/lib/api';
-import { createPublicClient, http, formatUnits } from 'viem';
-import { base } from 'viem/chains';
-import { ESCROW_ADDRESS, USDC_ABI } from '@/lib/contracts';
-import { getDefaultTokenAddress } from '@/lib/tokens';
-
-const USDC_ADDRESS = getDefaultTokenAddress() as `0x${string}`;
 
 // Smooth animation variants
 const fadeInUp = {
@@ -449,39 +442,8 @@ export default function HomePage() {
     return () => clearInterval(interval);
   }, [trustPhrases.length]);
 
-  // Platform stats
-  const [stats, setStats] = useState({ trades: 0, orders: 0, tvl: 0, volume: 0, loading: true });
-  
   // Steps tab state
   const [activeStepsTab, setActiveStepsTab] = useState<'onramp' | 'offramp'>('onramp');
-
-  useEffect(() => {
-    async function fetchStats() {
-      try {
-        const debugData = await api.getDebugData();
-        const settled = debugData.trades?.filter(t => t.status === 1) || [];
-        const volume = settled.reduce((sum, trade) => sum + parseFloat(trade.token_amount || '0') / 1e6, 0);
-        const orders = await api.getActiveOrders();
-        
-        let tvl = 0;
-        try {
-          const client = createPublicClient({ chain: base, transport: http('https://mainnet.base.org') });
-          const balance = await client.readContract({
-            address: USDC_ADDRESS,
-            abi: USDC_ABI,
-            functionName: 'balanceOf',
-            args: [ESCROW_ADDRESS],
-          });
-          tvl = parseFloat(formatUnits(balance as bigint, 6));
-        } catch {}
-        
-        setStats({ trades: settled.length, orders: orders?.length || 0, tvl, volume, loading: false });
-      } catch {
-        setStats(prev => ({ ...prev, loading: false }));
-      }
-    }
-    fetchStats();
-  }, []);
 
   return (
     <>
@@ -741,41 +703,6 @@ export default function HomePage() {
                   </Button>
                 </a>
               </motion.div>
-            </motion.div>
-
-            {/* Inline Stats - Prominent and clear, fade in after landing */}
-            <motion.div
-              className="mt-16 flex flex-wrap justify-center gap-12 md:gap-16"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: showLanding ? 0 : 1, y: showLanding ? 20 : 0 }}
-              transition={{ duration: 0.6, delay: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
-            >
-              <div className="flex flex-col items-center">
-                <span className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  {stats.loading ? '—' : stats.trades}
-                </span>
-                <span className="text-base md:text-lg font-medium text-slate-600 dark:text-slate-300 mt-1">
-                  {t('stats.tradesSettled')}
-                </span>
-              </div>
-              <div className="hidden md:block w-px h-16 bg-gradient-to-b from-transparent via-purple-400/50 to-transparent" />
-              <div className="flex flex-col items-center">
-                <span className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
-                  {stats.loading ? '—' : stats.orders}
-                </span>
-                <span className="text-base md:text-lg font-medium text-slate-600 dark:text-slate-300 mt-1">
-                  {t('stats.activeOrders')}
-                </span>
-              </div>
-              <div className="hidden md:block w-px h-16 bg-gradient-to-b from-transparent via-purple-400/50 to-transparent" />
-              <div className="flex flex-col items-center">
-                <span className="text-3xl md:text-4xl font-bold text-emerald-500 dark:text-emerald-400">
-                  ${stats.loading ? '—' : stats.tvl.toFixed(0)}
-                </span>
-                <span className="text-base md:text-lg font-medium text-slate-600 dark:text-slate-300 mt-1">
-                  {t('stats.inEscrow')}
-                </span>
-              </div>
             </motion.div>
 
           </motion.div>
