@@ -86,7 +86,7 @@ export function Navigation() {
     : isSimplifiedChinese 
       ? '/logo-compact-zh.svg' 
       : '/logo-compact.svg';
-  const logoWidth = isChinese ? 140 : 120;
+  const logoWidth = isChinese ? 170 : 150;
   const logoAlt = isTraditionalChinese ? '靈犀支付' : isSimplifiedChinese ? '灵犀支付' : 'LyncZ';
 
   return (
@@ -99,13 +99,13 @@ export function Navigation() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center justify-between">
           {/* Logo with icon */}
-          <Link href="/" className="flex items-center gap-2.5 hover:opacity-80 transition-opacity group">
+          <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity group">
             <div className="relative">
               <Image 
                 src="/lyncz_logo_transparent.png"
                 alt="LyncZ Icon" 
-                width={36}
-                height={36}
+                width={48}
+                height={48}
                 className="rounded-lg transition-transform group-hover:scale-105"
                 priority
               />
@@ -116,7 +116,7 @@ export function Navigation() {
               src={logoSrc}
               alt={logoAlt} 
               width={logoWidth}
-              height={40}
+              height={48}
               priority
             />
           </Link>
@@ -224,20 +224,20 @@ export function Navigation() {
         <div className="md:hidden">
           <div className="flex items-center justify-between">
             {/* Logo with icon */}
-            <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <Link href="/" className="flex items-center gap-2.5 hover:opacity-80 transition-opacity">
               <Image 
                 src="/lyncz_logo_transparent.png"
                 alt="LyncZ Icon" 
-                width={28}
-                height={28}
+                width={38}
+                height={38}
                 className="rounded-md"
                 priority
               />
               <Image 
                 src={logoSrc}
                 alt={logoAlt} 
-                width={logoWidth * 0.7}
-                height={28}
+                width={Math.round(logoWidth * 0.72)}
+                height={38}
                 priority
               />
             </Link>
