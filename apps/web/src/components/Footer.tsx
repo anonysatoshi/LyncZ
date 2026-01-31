@@ -31,7 +31,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-5 [transform:translateZ(0)]">
               <Image 
-                src="/logo-avatar.svg"
+                src="/lyncz_logo_transparent.png"
                 alt="LyncZ Icon" 
                 width={40}
                 height={40}

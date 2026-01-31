@@ -102,7 +102,7 @@ export function Navigation() {
           <Link href="/" className="flex items-center gap-2.5 hover:opacity-80 transition-opacity group">
             <div className="relative">
               <Image 
-                src="/logo-avatar.svg"
+                src="/lyncz_logo_transparent.png"
                 alt="LyncZ Icon" 
                 width={36}
                 height={36}
@@ -226,7 +226,7 @@ export function Navigation() {
             {/* Logo with icon */}
             <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <Image 
-                src="/logo-avatar.svg"
+                src="/lyncz_logo_transparent.png"
                 alt="LyncZ Icon" 
                 width={28}
                 height={28}
