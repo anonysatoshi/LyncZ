@@ -155,14 +155,6 @@ export function Footer() {
           <div className="text-xs text-slate-400 dark:text-slate-500">
             © 2026 <span className="text-purple-500/80 dark:text-purple-400/80 font-medium">LyncZ</span>. {t('rights')}
           </div>
-          <div className="flex items-center gap-3">
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-emerald-50/50 dark:bg-emerald-900/10 text-emerald-500 dark:text-emerald-400/80 rounded-md text-xs font-medium border border-emerald-200/30 dark:border-emerald-700/20">
-              <span className="w-1.5 h-1.5 bg-emerald-400 dark:bg-emerald-500 rounded-full animate-pulse" />
-              {t('live')}
-            </span>
-            <span className="text-slate-300 dark:text-slate-700">·</span>
-            <span className="text-xs text-slate-400 dark:text-slate-500">{t('network')}</span>
-          </div>
         </div>
       </div>
     </footer>
